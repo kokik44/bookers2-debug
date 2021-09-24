@@ -10,6 +10,8 @@ class UsersController < ApplicationController
   def index
     @users = User.all
     @book = Book.new
+  end
+  #ヒント2 end追加
 
   def edit
     @user = User.find(params[:id])
