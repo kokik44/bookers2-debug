@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :users,only: [:show,:index,:edit,:update]
   resources :books
-  devise_for :users
   root 'homes#top'
   get 'home/about' => 'homes#about'
 end
 #ヒント1 end追加
+#ヒント3 resources users devise 入れ替え
