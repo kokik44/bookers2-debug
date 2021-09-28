@@ -70,3 +70,6 @@ gem 'jquery-rails'
 gem 'font-awesome-sass', '~> 5.13'
 gem 'bootstrap', '~> 4.5'
 #ヒント4 bootstrap追加
+
+gem 'pry-rails'
+
