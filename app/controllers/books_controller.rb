@@ -26,6 +26,10 @@ class BooksController < ApplicationController
 
   def edit
     @book = Book.find(params[:id])
+    if @book.user != current_user
+      redirect_to books_path
+      #ヒント28 他人の本編集
+    end
   end
 
 
